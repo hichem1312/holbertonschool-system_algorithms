@@ -50,5 +50,12 @@ int colors(const rb_tree_t *tree);
 int f_height(const rb_tree_t *tree);
 int crb_height(const rb_tree_t *tree, int blk_height, int height);
 
+/* rb_tree_insert.c */
+rb_tree_t *rb_tree_insert(rb_tree_t **tree, int value);
+void insert_fixup(rb_tree_t **tree, rb_tree_t *new_node);
+rb_tree_t *insert_LEFT_fixup(rb_tree_t **tree, rb_tree_t *new_node);
+rb_tree_t *insert_RIGHT_fixup(rb_tree_t **tree, rb_tree_t *new_node);
+void left_rotate(rb_tree_t **tree, rb_tree_t *new_node);
+void right_rotate(rb_tree_t **tree, rb_tree_t *new_node);
 
 #endif /* _RB_TREES_H_ */
