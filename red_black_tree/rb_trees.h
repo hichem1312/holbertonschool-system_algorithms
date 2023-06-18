@@ -37,5 +37,18 @@ typedef struct rb_tree_s
 	struct rb_tree_s *left;
 	struct rb_tree_s *right;
 } rb_tree_t;
+
+void rb_tree_print(const rb_tree_t *tree);
+
+/* rb_tree_node.c */
 rb_tree_t *rb_tree_node(rb_tree_t *parent, int value, rb_color_t color);
+
+/* rb_tree_is_valid.c */
+int rb_tree_is_valid(const rb_tree_t *tree);
+int bst(const rb_tree_t *tree, int min, int max);
+int colors(const rb_tree_t *tree);
+int f_height(const rb_tree_t *tree);
+int crb_height(const rb_tree_t *tree, int blk_height, int height);
+
+
 #endif /* _RB_TREES_H_ */

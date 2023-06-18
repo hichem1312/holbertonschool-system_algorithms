@@ -51,7 +51,7 @@ static int rb_print_t(const rb_tree_t *tree, int offset, int depth, char **s)
  *
  * Return: The height of the tree starting at @node
  */
-static size_t rb_height(const rb_tree_t *tree)
+size_t rb_height(const rb_tree_t *tree)
 {
 	size_t height_l;
 	size_t height_r;
