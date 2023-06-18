@@ -91,10 +91,10 @@ int f_height(const rb_tree_t *tree)
 }
 
 /**
- * check_rb_height - finds the height of black nodes in RBT
+ * crb_height - finds the height of black nodes in RBT
  *
  * @tree: tree to check
- * @blk_height: number of black nodes
+ * @black_height: number of black nodes
  * @height: max height
  *
  * Return: 1 if yes, 0 if no
