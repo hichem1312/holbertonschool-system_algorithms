@@ -10,15 +10,15 @@
 
 rb_tree_t *rb_tree_node(rb_tree_t *parent, int value, rb_color_t color)
 {
-    rb_tree_t *node = malloc(sizeof(*node));
+	rb_tree_t *node = malloc(sizeof(*node));
 
-    if (node)
-    {
-        node->n = value;
-        node->color = color;
-        node->parent = parent;
+	if (node)
+	{
+		node->n = value;
+		node->color = color;
+		node->parent = parent;
 		node->left = NULL;
 		node->right = NULL;
-    }
-    return (node);
+	}
+	return (node);
 }
