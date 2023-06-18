@@ -60,4 +60,14 @@ void right_rotate(rb_tree_t **tree, rb_tree_t *new_node);
 
 rb_tree_t *array_to_rb_tree(int *array, size_t size);
 
+/* rb_tree_remove.c */
+rb_tree_t *rb_tree_remove(rb_tree_t *root, int n);
+rb_tree_t *rb_tree_delete(rb_tree_t *root, rb_tree_t *remove);
+void rb_transplant(rb_tree_t **root, rb_tree_t *x, rb_tree_t *y);
+rb_tree_t *rb_delete_fixup(rb_tree_t *root, rb_tree_t *x);
+rb_tree_t *rb_delete_fix_left(rb_tree_t **root, rb_tree_t *x);
+rb_tree_t *rb_delete_fix_right(rb_tree_t **root, rb_tree_t *x);
+rb_tree_t *tree_min(rb_tree_t *root);
+
+
 #endif /* _RB_TREES_H_ */
