@@ -9,7 +9,7 @@
 size_t nary_tree_traverse(nary_tree_t const *root,
 		void (*action)(nary_tree_t const *node, size_t depth))
 {
-    size_t i;
+	size_t i;
 	static size_t depth, max;
 
 	while (root != NULL)
@@ -20,17 +20,17 @@ size_t nary_tree_traverse(nary_tree_t const *root,
 		root = root->next;
 	}
 	if (max < depth)
-    {
+	{
 		max = depth;
-    }
+	}
 	if (depth == 0)
 	{
 		i = max;
 		max = 0;
 	}
 	else
-    {
+	{
 		--depth;
-    }
+	}
 	return (i);
 }
